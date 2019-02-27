@@ -1,0 +1,23 @@
+.main-header{
+    @include media-breakpoint-down(md){
+        display: block !important;
+    }
+    .navbar-toggler-icon{
+        width: 34px;
+        height: 1px;
+        margin-top: 10px;
+        background: $body-color;
+        &::after, 
+        &::before{
+            @include sudoElement(
+                $width: 34px,
+                $height: 1px,
+                $background: $body-color,
+            );
+            margin-top: -10px;
+        }
+        &::before{
+            margin-top: 10px;
+        }
+    }
+}

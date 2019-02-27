@@ -1,0 +1,52 @@
+// Colors
+$base-bg: #ffffff;
+$body-color: #000000;
+$base-text: $body-color;
+$secondary-color: #464646;
+$tertiary-color: #d8d8d8;
+$quaternary-color: #777575;
+$base-transparent: rgba(17, 26, 39, .7);
+$overlay: rgba(255, 255, 255, .28);
+
+// Color extend 
+%whiteColor{
+    color: $base-bg;
+}
+
+%whiteBackground{
+    background-color: $base-bg;
+}
+
+%baseTextColor{
+    color: $base-text;
+}
+
+%baseTextBgColor{
+    background-color: $base-text;
+}
+
+%baseGrayColor{
+    color: $tertiary-color;
+}
+
+// Card color
+.card-link{
+    color: $body-color;
+}
+
+// Sidebar
+.sidebar-list{
+    li{
+        a{
+            color: $body-color;
+        }
+    }
+}
+
+// Footer 
+.copy-right{
+    p{
+        color: $quaternary-color;
+    }
+}
+

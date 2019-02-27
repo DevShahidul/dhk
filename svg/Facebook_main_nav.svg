@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Side-mar-menu" transform="translate(0.000000, -615.000000)" fill="#000000">
+            <g id="social-media-icons">
+                <g transform="translate(0.000000, 615.000000)">
+                    <path d="M15,0 L0,0 L0,14.9977538 L8.0122828,14.9977538 L8.0122828,9.18912848 L6.05751947,9.18912848 L6.05751947,6.92722372 L8.0122828,6.92722372 L8.0122828,5.25831087 C8.0122828,3.32210243 9.19637507,2.26639712 10.9242061,2.26639712 C11.7510485,2.26639712 12.4633014,2.32704403 12.670012,2.35624438 L12.670012,4.38005391 L11.4701917,4.38005391 C10.5310066,4.38005391 10.3490114,4.82704403 10.3490114,5.48292902 L10.3490114,6.92722372 L12.5913721,6.92722372 L12.299281,9.19137466 L10.3490114,9.19137466 L10.3490114,15 L15,15 L15,0 L15,0 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,88 @@
+// roboto font face
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+// NoeDisplay Fonts stack
+$font-stack-NoeDisplay-Regular: (
+  "NoeDisplay-Regular",
+  sans-serif,
+);
+
+$default-font-stack: (
+    -apple-system, BlinkMacSystemFont, 
+    "Segoe UI", 
+    Roboto, 
+    "Helvetica Neue", 
+    Arial, 
+    sans-serif, 
+    "Apple Color Emoji", 
+    "Segoe UI Emoji", 
+    "Segoe UI Symbol",
+);
+
+// fonts
+$regularFontWeight: 400;
+$boldFontWeight: 700;
+
+
+$d-font-size: 14px;
+$d-line-height: 19px;
+$d-font-weight: $regularFontWeight;
+$d-font-family: $default-font-stack;
+$nav-font-size: $d-font-size + 4;
+$nav-line-height: $d-line-height + 2;
+$nav-letterspacing: 1.6px;
+$subnav-font-size: $d-font-size + 2;
+$subnav-line-height: $subnav-font-size + 6;
+
+
+body{
+    font-size: $d-font-size;
+    line-height: $d-line-height;
+    font-family: $d-font-family; 
+    font-weight: $d-font-weight;   
+    -webkit-text-size-adjust: 100%; 
+    -moz-text-size-adjust:100%; 
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased; 
+}
+
+a{
+    outline: none;
+    &:focus{
+        outline: none;        
+    }
+}
+
+// Heading fonts
+h2{
+    @include fonts(35px, 41px, 700, 0.84px);
+}
+
+h3{
+    @include fonts(24px, 32px, 700, 0.58px);
+}
+
+h4{
+    @include fonts(20px, 24px, 700, 0.5px);
+}
+
+// lead text
+.lead-text{
+    @include fonts(16px, $d-line-height + 2);
+}
+
+// Card 
+.card-link{
+    @include fonts($d-font-size - 1, $d-line-height -4, 700);
+}
+
+// Sidebar
+#sidebar-container{
+    .sidebar-list{
+        li{
+            a{
+                @include fonts($nav-font-size, $nav-line-height, 700);
+            }
+        }
+    }
+}
