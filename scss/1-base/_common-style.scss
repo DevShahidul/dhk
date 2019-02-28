@@ -1,3 +1,16 @@
+.page-content{
+    padding-bottom: 65px;
+}
+@include media-breakpoint-down(sm){
+    .container{
+        padding-right: 20px; 
+        padding-left: 20px;
+    }
+    #body-row{
+        padding-top: 117px;
+    }
+}
+
 @include media-breakpoint-between(sm, md){
     .container{
         max-width: 100%;
@@ -9,18 +22,21 @@
     }
 }
 
-@include media-breakpoint-up(lg){
+@include media-breakpoint-up(md){
     .project-item-section{
-        padding-right: 109px; 
+        //padding-right: 99px; 
+        padding-right: 35px; 
+        padding-left: 35px;
         padding-top: 62px;
     }
 }
-@include media-breakpoint-down(sm){
-    .container{
-        padding-right: 20px; 
-        padding-left: 20px;
-    }
-    #body-row{
-        padding-top: 117px;
+
+
+@include media-breakpoint-only(xl){
+    .project-item-section{
+        //padding-right: 99px; 
+        padding-right: 53px; 
+        padding-left: 53px;
+        padding-top: 62px;
     }
 }
