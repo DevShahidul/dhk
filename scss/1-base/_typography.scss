@@ -1,16 +1,10 @@
 // roboto font face
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
-// NoeDisplay Fonts stack
-$font-stack-NoeDisplay-Regular: (
-  "NoeDisplay-Regular",
-  sans-serif,
-);
-
 $default-font-stack: (
+    Roboto, 
     -apple-system, BlinkMacSystemFont, 
     "Segoe UI", 
-    Roboto, 
     "Helvetica Neue", 
     Arial, 
     sans-serif, 
@@ -135,5 +129,13 @@ h4{
                 line-height: $d-font-size;
             }
         }
+    }
+}
+
+// Footer 
+.copy-right{
+    p{
+        font-size: $d-font-size - 3;
+        line-height: $d-font-size - 1;
     }
 }

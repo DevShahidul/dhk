@@ -1,7 +1,7 @@
 .main-footer{
     width: 100%;
     background-color: $tertiary-color;
-    padding: 12px 70px 9px;
+    padding: 15px 70px 12px;
     @include media-breakpoint-down(md){
         padding-right: 25px; 
         padding-left: 25px;
