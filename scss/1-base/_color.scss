@@ -29,19 +29,69 @@ $overlay: rgba(255, 255, 255, .28);
     color: $tertiary-color;
 }
 
+%body-color{
+    color: $body-color;
+}
+
 // Card color
 .card-link{
-    color: $body-color;
+    @extend %body-color;
 }
 
 // Sidebar
 .sidebar-list{
     li{
         a{
-            color: $body-color;
+            @extend %body-color;
         }
     }
 }
+
+.main-header{
+    .navbar{
+        .dropdown-menu{
+            text-align: right;
+            li{
+                a{
+                    @extend %body-color;
+                }
+            }
+        }
+        .nav-link{
+            @include media-breakpoint-down(md){
+                padding-right: 20px;
+                position: relative;
+            }
+        }
+    }
+}
+
+
+// Nav mobi
+.main-header{
+    .navbar{
+        .nav-link{
+            @extend %body-color;
+        }
+    }
+}
+
+// Project page style 
+.project-link-wrp{
+    li{
+        a{
+            @extend %body-color;
+        }
+    }
+}
+
+.project-wrap{
+    .project-item{
+        @extend %body-color;
+    }
+}
+
+
 
 // Footer 
 .copy-right{

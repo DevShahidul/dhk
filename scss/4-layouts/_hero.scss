@@ -4,5 +4,13 @@
     @extend %bg;
     img{
         display: none;
+        max-width: 100%;
+    }
+    @include media-breakpoint-down(md){
+        height: auto;
+        background-image: none !important;
+        img{
+            display: block;
+        }
     }
 }

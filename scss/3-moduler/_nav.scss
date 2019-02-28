@@ -1,6 +1,41 @@
 .main-header{
     .navbar{
-        //padding-bottom: 57px;
+        .navbar-collapse{
+            max-height: calc(100vh - 98px);
+            overflow-y: auto;
+        }
+        .navbar-nav{
+            min-height: calc(100vh - 98px);
+            padding-top: 21px;
+        }
+        .dropdown-menu{
+            text-align: right;
+            padding: 6px 20px;
+            border: 0; 
+            border-radius: 0;
+        }
+        .nav-link{
+            padding-top: 6px; 
+            padding-bottom: 6px;
+            @include media-breakpoint-down(md){
+                padding-right: 20px;
+                position: relative;
+            }
+        }
+        @include media-breakpoint-down(md){
+            .dropdown-toggle::after{
+                position: absolute;
+                right: 0;
+                top: 17px;
+                width: 12px;
+                height: 6px;
+                background-image: url(../img/dropdown-icon.jpg);
+                border: 0;
+                background-repeat: no-repeat;
+                background-size: 12px 6px;
+                background-position: 0 0;
+            }
+        }
     }
 }
 

@@ -55,21 +55,41 @@ a{
 
 // Heading fonts
 h2{
-    @include fonts(35px, 41px, 700, 0.84px);
+    @include fonts($d-font-size * 2.5 , $d-line-height * 1.952380952380952, 700, 0.84px);
 }
 
 h3{
-    @include fonts(24px, 32px, 700, 0.58px);
+    @include fonts($d-font-size + 10 , $d-line-height + 11, 700, 0.58px);
 }
 
 h4{
-    @include fonts(20px, 24px, 700, 0.5px);
+    @include fonts($d-font-size + 6 , $d-line-height + 3, 700, 0.5px);
 }
 
 // lead text
 .lead-text{
     @include fonts(16px, $d-line-height + 2);
 }
+
+// Nav font 
+.main-header{
+    .navbar{
+        .dropdown-menu{
+            text-align: right;
+            li{
+                a{
+                    @include fonts($d-font-size, $d-line-height);
+                }
+            }
+        }
+        .nav-link{
+            @include media-breakpoint-down(md){
+                @include fonts($d-font-size +6 , $d-line-height + 3, 700, 1.18px);
+            }
+        }
+    }
+}
+
 
 // Card 
 .card-link{
@@ -82,6 +102,37 @@ h4{
         li{
             a{
                 @include fonts($nav-font-size, $nav-line-height, 700);
+            }
+        }
+    }
+}
+
+
+// Project page style 
+.project-link-wrp{
+    li{
+        a{
+            font-size: $d-font-size + 1;
+            letter-spacing: 0.36px;
+        }
+    }
+}
+
+
+.project-wrap{
+    padding: 20px 35px;
+    .project-item{
+        address{
+            @include fonts($d-font-size + 1, $d-font-size + 1, 400, 0.36px, "roboto");
+        }
+        @include media-breakpoint-down(sm){
+            h3{
+                font-size: $d-font-size + 3;
+                line-height: $d-line-height - 1;
+            }
+            address{
+                font-size: $d-font-size - 2;
+                line-height: $d-font-size;
             }
         }
     }
