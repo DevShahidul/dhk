@@ -6501,6 +6501,11 @@ a.text-dark:hover, a.text-dark:focus {
     padding-right: 20px;
     position: relative; } }
 
+.card-wrap a {
+  color: #000000; }
+.card-wrap p {
+  color: #464646; }
+
 .copy-right p {
   color: #777575; }
 

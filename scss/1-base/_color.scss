@@ -91,6 +91,15 @@ $overlay: rgba(255, 255, 255, .28);
     }
 }
 
+.card-wrap{
+    a{
+        color: $body-color;
+    }
+    p{
+        color: $secondary-color;   
+    }
+}
+
 
 
 // Footer 
