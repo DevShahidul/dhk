@@ -6673,7 +6673,7 @@ h4 {
   .main-header .navbar .dropdown-toggle::after {
     position: absolute;
     right: 0;
-    top: 17px;
+    top: 15px;
     width: 12px;
     height: 6px;
     background-image: url(../img/dropdown-icon.jpg);
