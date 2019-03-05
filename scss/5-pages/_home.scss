@@ -1,3 +1,9 @@
+.home-content{
+    padding-bottom: 65px;
+    @include media-breakpoint-up(lg){
+        margin-top: 100vh;
+    }
+}
 .card-container{
     @include media-breakpoint-up(md){
         padding: 0 35px;
@@ -21,6 +27,17 @@
         img{
             border-radius: 0;
             max-width: 100%;
+            @include transition($duration: .5s);
+        }
+        .figure-wrap{
+            overflow: hidden;
+        }
+        a{
+            &:hover{
+                img{
+                    @include transform(scale(1.04));
+                }
+            }
         }
         .card-body{
             padding: 35px 28px 25px 0;
@@ -31,6 +48,19 @@
             h4{
                 margin-bottom: 11px;
                 max-width: 235px;
+                a{
+                    background-image: -webkit-linear-gradient(currentColor,currentColor);
+                    -moz-background-image: linear-gradient(currentColor,currentColor);
+                    background-image: linear-gradient(currentColor,currentColor);
+                    background-position: 0 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0 2px;
+                    @include transition($property: background-size, $duration: 1s);
+                    &:hover{
+                        background-size: 100% 2px;
+                        text-decoration: none;
+                    }
+                }
             }
             p{
                 margin-bottom: 0;

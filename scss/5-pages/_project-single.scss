@@ -1,0 +1,80 @@
+.project-page{
+    &.single{
+        padding-bottom: 60px;
+        .project-wrap{
+            @include media-breakpoint-only(xl){
+                padding-top: 22.5px !important;
+                padding-bottom: 22.5px !important;
+            }
+            
+        }
+    }
+    .project-item-section{
+        @include media-breakpoint-down(sm){
+            padding: 0;
+            .project-wrap{
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            .project-description{
+                padding: 22px 25px 0;
+            }
+            .d-none {
+                display: none !important;
+            }
+        }
+    }
+}
+
+.project-description{
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        padding-top: 45px;
+        @include media-breakpoint-down(sm){
+            padding-top: 14px;
+        }
+        li{
+            float: left; 
+            clear: both;
+            margin: 2px 0; 
+            strong{
+                float: left;
+                width: 77px;
+            }
+            span, div{
+                float: left;
+            }
+            &:last-child{
+                margin-top: 24px;
+            }
+        }
+    }
+    .nav-social{
+        a{
+            margin: 0 4px;
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.direction-wrap{
+    margin-top: 12.5px;    
+    @include media-breakpoint-down(sm){
+        padding-left: 20px; 
+        padding-right: 20px;
+        margin-top: 19px;
+    }
+    @include media-breakpoint-up(md){
+        padding-left: 25px; 
+        padding-right: 25px;
+    }
+    @include media-breakpoint-up(lg){
+        padding-left: 35px; 
+        padding-right: 35px;    
+    }
+    
+}
