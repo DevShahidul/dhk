@@ -1,7 +1,8 @@
 #sidebar-container {
-    min-height: 100vh; 
+    min-height: 100vh;
     padding: 0;
-    @include media-breakpoint-down(md){
+
+    @include media-breakpoint-down(md) {
         display: none !important;
     }
 }
@@ -10,53 +11,87 @@
 .sidebar-expanded {
     width: 252px;
 }
+
 .sidebar-collapsed {
     width: 60px;
 }
 
 /* Menu item*/
-#sidebar-container{
-    .sidebar-inner{
+#sidebar-container {
+    .sidebar-inner {
         height: 100vh;
         width: 252px;
         padding-left: 70px;
     }
-    .logo{
-        width: 117px;
+
+    .logo {
+        width: 0;
+        opacity: 0;
         height: 117px;
         margin-top: 70px;
         position: absolute;
         top: 0;
         z-index: 9;
+        overflow: hidden;
+        @include transition($duration: 1000ms);
+
+        &.active {
+            width: 117px;
+            opacity: 1;
+        }
     }
-    .sidebar-list{
+
+    .sidebar-list {
         @include centerTop;
-        margin: 70px 0 50px;
+        margin: 60px 0;
         padding-left: 0;
         list-style: none;
-        li{
+
+        li {
             float: left;
             width: 100%;
             margin: 8px 0;
-            a{
+
+            a {
                 display: inline-block;
+                background-image: -webkit-linear-gradient(currentColor, currentColor);
+                -moz-background-image: linear-gradient(currentColor, currentColor);
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0 100%;
+                background-repeat: no-repeat;
+                background-size: 0 2px;
+                @include transition($property: background-size, $duration: .7s);
+                position: relative;
+                z-index: 1;
+
+                &::after {
+                    @include sudoElement(auto, auto, transparent, absolute, "");
+                    margin-left: 8px;
+                }
+                &:hover {
+                    background-size: 100% 2px;
+                    text-decoration: none;
+                }
             }
         }
     }
 
-    .nav-social{
+    .nav-social {
         bottom: 50px;
-        a{
+
+        a {
             float: left;
             margin-right: 10px;
-            width: 15px; 
+            width: 15px;
             height: 15px;
-            img{
+
+            img {
                 display: block;
                 @include transition(opacity);
             }
-            &:hover{
-                img{
+
+            &:hover {
+                img {
                     opacity: 0.66;
                 }
             }

@@ -1,12 +1,26 @@
 .main-header{
     .navbar{
         .navbar-collapse{
-            max-height: calc(100vh - 98px);
+            max-height: calc(100vh - 116px);
             overflow-y: auto;
+            display: block !important;
+            width: 100%;
+            transform: translateX(110%);
+            position: absolute; 
+            top: 0;
+            right: 0;
+            margin-top: 115px;
+            background: #ffffff; padding: 0 20px;
+            @include transition;
+            &.show{
+                transform: translateX(0);
+            }
+            
         }
         .navbar-nav{
-            min-height: calc(100vh - 98px);
+            min-height: calc(100vh - 116px);
             padding-top: 21px;
+            padding-bottom: 20px;
         }
         .dropdown-menu{
             text-align: right;

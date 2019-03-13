@@ -3,6 +3,9 @@
     height: 100vh;
     overflow: hidden;
     @extend %bg;
+    top: 1px;
+    margin-top: -1px;
+    z-index: -1;
     img{
         display: none;
         max-width: 100%;
@@ -22,10 +25,13 @@
         }
     }
     @include media-breakpoint-down(md){
-        height: auto;
-        background-image: none !important;
-        img{
-            display: block;
-        }
+        height: 416px;
+        //background-image: none !important;
+//        img{
+//            display: block;
+//        }
+    }
+    @include media-breakpoint-up(lg){
+        position: fixed !important;
     }
 }
