@@ -19,16 +19,6 @@
     }
 }
 .project-wrap{
-    &.px-0{
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-    &.pl-0{
-        padding-left: 0 !important;
-    }
-    &.pr-0{
-        padding-right: 0 !important;
-    }
     @include media-breakpoint-down(sm){
         padding: 11px 20px !important;
     }
@@ -42,11 +32,9 @@
         display: block;
         position: relative;
         text-align: center;
-        overflow: hidden;
         img{
             width: 100%;
-            //@include transition;
-            @include transition($duration: .5s);
+            @include transition;
         }
         .overlay{
             position: absolute;
@@ -74,7 +62,6 @@
         &:hover{
             img{
                 opacity: .28;
-                @include transform(scale(1.04));
             }
             .overlay{
                 opacity: 1;

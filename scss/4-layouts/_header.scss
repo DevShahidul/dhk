@@ -3,14 +3,6 @@
         display: block !important;
         .navbar-brand{
             padding: 0;
-            width: 0; 
-            opacity: 0;
-            overflow: hidden;
-            @include transition($duration: 1000ms);
-            &.active{
-                width: 73px; 
-                opacity: 1;
-            }
         }
         .navbar{
             padding: 32px 25px;

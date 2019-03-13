@@ -6,21 +6,21 @@
                 padding-top: 22.5px !important;
                 padding-bottom: 22.5px !important;
             }
-            
-        }
-    }
-    .project-item-section{
-        @include media-breakpoint-down(sm){
-            padding: 0;
-            .project-wrap{
+            @include media-breakpoint-down(sm){
                 padding-left: 0 !important;
                 padding-right: 0 !important;
             }
-            .project-description{
-                padding: 22px 25px 0;
-            }
-            .d-none {
-                display: none !important;
+            
+        }
+        .project-item-section{
+            @include media-breakpoint-down(sm){
+                padding: 0;
+                .project-description{
+                    padding: 22px 25px 0;
+                }
+                .d-none {
+                    display: none !important;
+                }
             }
         }
     }
