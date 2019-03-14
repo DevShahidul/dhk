@@ -6599,6 +6599,10 @@ h4 {
 .project-link-wrp li a {
   font-size: 15px;
   letter-spacing: 0.36px; }
+  .project-link-wrp li a::after {
+    font-weight: 700; }
+.project-link-wrp li.active a {
+  font-weight: 700; }
 
 .project-wrap {
   padding: 20px 35px; }
@@ -6654,6 +6658,11 @@ h4 {
     padding-right: 53px;
     padding-left: 53px;
     padding-top: 62px; } }
+.nav-social a {
+  margin: 0 4px; }
+  .nav-social a:first-child {
+    margin-left: 0; }
+
 .main-header .navbar .navbar-collapse {
   max-height: calc(100vh - 116px);
   overflow-y: auto;
@@ -6947,19 +6956,6 @@ h4 {
           transition: background-size 1s ease-in-out 0s; }
       .card-wrap .card .card-body p {
         margin-bottom: 0; }
-      .card-wrap .card .card-body .card-link {
-        position: relative;
-        z-index: 1; }
-        .card-wrap .card .card-body .card-link::after {
-          content: ">";
-          left: 0;
-          top: 0;
-          background-color: transparent;
-          position: relative;
-          width: 7px;
-          height: 15px;
-          z-index: -1;
-          margin-left: 8px; }
     .card-wrap .card:hover {
       text-decoration: none; }
       .card-wrap .card:hover img {
@@ -6971,6 +6967,20 @@ h4 {
       .card-wrap .card:hover h4 span {
         background-size: 100% 2px;
         text-decoration: none; }
+
+.card-link {
+  position: relative;
+  z-index: 1; }
+  .card-link::after {
+    content: ">";
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    position: relative;
+    width: 7px;
+    height: 15px;
+    z-index: -1;
+    margin-left: 8px; }
 
 .project-page {
   padding-bottom: 20px; }
@@ -6994,6 +7004,16 @@ h4 {
     @media (max-width: 1199.98px) {
       .project-link-wrp li {
         margin: 22px 2.5px 0; } }
+    .project-link-wrp li a {
+      font-size: 15px;
+      letter-spacing: 0.36px; }
+      .project-link-wrp li a::after {
+        content: attr(title);
+        font-weight: 700;
+        height: 0;
+        display: block;
+        overflow: hidden;
+        visibility: hidden; }
 
 @media (min-width: 576px) {
   .title-wrap {
@@ -7105,10 +7125,6 @@ h4 {
       float: left; }
     .project-description ul li:last-child {
       margin-top: 24px; }
-.project-description .nav-social a {
-  margin: 0 4px; }
-  .project-description .nav-social a:first-child {
-    margin-left: 0; }
 
 .direction-wrap {
   margin-top: 12.5px; }
@@ -7126,7 +7142,10 @@ h4 {
       padding-left: 35px;
       padding-right: 35px; } }
 
-.stories .card-wrap {
+.stories-contents .card-wrap {
   margin-top: 0; }
+
+.video-contents {
+  padding-bottom: 45px; }
 
 /*# sourceMappingURL=main.css.map */

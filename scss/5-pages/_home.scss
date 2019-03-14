@@ -54,14 +54,6 @@
             p{
                 margin-bottom: 0;
             }
-            .card-link{
-                position: relative;
-                z-index: 1;
-                &::after{
-                    @include sudoElement(7px, 15px, transparent, relative, ">");
-                    margin-left: 8px;
-                }
-            }
         }
         &:hover{
             text-decoration: none;
@@ -75,5 +67,13 @@
                 }
             }
         }
+    }
+}
+.card-link{
+    position: relative;
+    z-index: 1;
+    &::after{
+        @include sudoElement(7px, 15px, transparent, relative, ">");
+        margin-left: 8px;
     }
 }

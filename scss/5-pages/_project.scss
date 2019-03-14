@@ -27,8 +27,21 @@
         @include media-breakpoint-down(lg) {
              margin: 22px 2.5px 0;
         }
+        a{
+            font-size: $d-font-size + 1;
+            letter-spacing: 0.36px;
+            &::after{
+                content: attr(title);
+                font-weight: 700;
+                height: 0;
+                display: block;
+                overflow: hidden;
+                visibility: hidden;
+            }
+        }
     }
 }
+
 
 .title-wrap {
     @include media-breakpoint-up(sm) {

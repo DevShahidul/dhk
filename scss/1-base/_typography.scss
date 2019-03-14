@@ -108,6 +108,14 @@ h4{
         a{
             font-size: $d-font-size + 1;
             letter-spacing: 0.36px;
+            &::after{
+                font-weight: 700;
+            }
+        }
+        &.active{
+            a{
+                font-weight: 700;
+            }
         }
     }
 }
