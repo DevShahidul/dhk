@@ -1,0 +1,48 @@
+.press-page{
+    padding-bottom: 200px;
+    @include media-breakpoint-down(sm){
+        padding-bottom: 150px;
+    }
+    .project-wrap{
+        .project-item{
+            overflow: visible;
+            figure{
+                display: block;
+                overflow: hidden;
+            }
+            .overlay{
+                bottom: auto;
+                top: 100%;
+                background-color: $theme-gray;
+                padding: 52px 20px 31px;
+                p{
+                    float: left;
+                    max-width: 182px;
+                    text-align: left;
+                    strong{
+                        display: block;
+                    }
+                }
+                @include media-breakpoint-down(sm){
+                    opacity: 0;
+                    visibility: hidden;
+                    padding: 5px 14px;
+                    p{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            &:hover{
+                img{
+                    opacity: 1;
+                }
+                @include media-breakpoint-down(sm){
+                    .overlay{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -147,3 +147,18 @@ h4{
         line-height: $d-font-size - 1;
     }
 }
+
+.press-page{
+    .project-wrap{
+        .project-item{            
+            @include media-breakpoint-down(sm){
+                .overlay{
+                    p{
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
