@@ -15,6 +15,17 @@
                 }
             }
         }
+
+        
+    }
+    .project-item-section{
+        @include media-breakpoint-down(sm){
+            padding-right: 0;
+            padding-left: 0;
+            .title-wrap{
+                padding: 0 20px;
+            }
+        }
     }
 }
 
