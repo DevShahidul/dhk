@@ -6494,6 +6494,9 @@ a.text-dark:hover, a.text-dark:focus {
 .card-link, .sidebar-list li a, .main-header .navbar .dropdown-menu li a, .main-header .navbar .nav-link, .project-link-wrp li a, .project-wrap .project-item {
   color: #000000; }
 
+.theme-red {
+  color: #c73434 !important; }
+
 .main-header .navbar .dropdown-menu {
   text-align: right; }
 @media (max-width: 991.98px) {
@@ -7147,5 +7150,30 @@ h4 {
 
 .video-contents {
   padding-bottom: 45px; }
+
+.video-wrap {
+  width: 100%; }
+  .video-wrap iframe {
+    height: 436px; }
+    @media (max-width: 1199.98px) {
+      .video-wrap iframe {
+        height: 350px; } }
+    @media (max-width: 991.98px) {
+      .video-wrap iframe {
+        height: 300px; } }
+    @media (max-width: 767.98px) {
+      .video-wrap iframe {
+        height: 204px; } }
+
+.studio-leadership-contents {
+  padding-bottom: 31px; }
+  .studio-leadership-contents .project-description > strong {
+    margin-bottom: 11px; }
+  .studio-leadership-contents .project-description ul {
+    padding-top: 0; }
+    .studio-leadership-contents .project-description ul li strong {
+      width: 109px; }
+    .studio-leadership-contents .project-description ul li:last-child {
+      margin-top: 15px; }
 
 /*# sourceMappingURL=main.css.map */

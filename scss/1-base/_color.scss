@@ -5,6 +5,7 @@ $base-text: $body-color;
 $secondary-color: #464646;
 $tertiary-color: #d8d8d8;
 $quaternary-color: #777575;
+$theme-red: #c73434;
 $base-transparent: rgba(17, 26, 39, .7);
 $overlay: rgba(255, 255, 255, .28);
 
@@ -31,6 +32,10 @@ $overlay: rgba(255, 255, 255, .28);
 
 %body-color{
     color: $body-color;
+}
+
+.theme-red{
+    color: $theme-red !important;
 }
 
 // Card color

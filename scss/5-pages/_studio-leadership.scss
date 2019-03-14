@@ -1,0 +1,20 @@
+.studio-leadership-contents{
+    padding-bottom: 31px;
+    .project-description{
+        > {
+            strong{margin-bottom: 11px;}
+        }
+        ul{
+            padding-top: 0;
+            li{
+                strong{
+                    width: 109px;
+                }
+                &:last-child{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+

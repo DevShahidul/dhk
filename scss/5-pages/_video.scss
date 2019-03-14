@@ -1,3 +1,18 @@
 .video-contents{
     padding-bottom: 45px;
 }
+.video-wrap{
+    width: 100%;
+    iframe{
+        height: 436px;
+        @include media-breakpoint-down(lg){
+            height: 350px;
+        }
+        @include media-breakpoint-down(md){
+            height: 300px;
+        }
+        @include media-breakpoint-down(sm){
+            height: 204px;
+        }
+    }
+}
