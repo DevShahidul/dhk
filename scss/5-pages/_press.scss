@@ -4,11 +4,22 @@
         padding-bottom: 150px;
     }
     .project-wrap{
+        padding: 20px 26px !important;
+        @include media-breakpoint-down(sm) {
+            padding: 11px !important;
+            &:nth-child(odd){
+                padding-left: 20px !important;
+            }
+            &:nth-child(even){
+                padding-right: 20px !important;
+            }
+        }
         .project-item{
             overflow: visible;
             figure{
                 display: block;
                 overflow: hidden;
+                margin-bottom: 0;
             }
             .overlay{
                 bottom: auto;
@@ -43,6 +54,16 @@
                     }
                 }
             }
+        }
+    }
+
+    .title-wrap {
+        @include media-breakpoint-up(sm) {
+            padding-right: 26px !important;
+        }
+    
+        @include media-breakpoint-up(lg) {
+            padding-right: 26px !important;
         }
     }
 }
